@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { PostsResolver } from './resolvers/posts.resolver';
 import { PostListComponent } from './components/post-list/post-list.component';
 import { PostListItemComponent } from './components/post-list-item/post-list-item.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { PostListItemComponent } from './components/post-list-item/post-list-ite
     CommonModule,
     SocialMediaRoutingModule,
     RouterModule,
+    SharedModule
   ],
   providers: [
     PostsService,

@@ -1,0 +1,31 @@
+mat-list-item {
+
+  border-bottom: thin solid #555;
+  margin: 20px 0;
+  span{
+    display: block;
+  }
+
+
+}
+
+.comments-row {
+
+  display: flex;
+
+  border-top: thin solid #555;
+
+  padding-top: 10px;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+}
+
+
+mat-form-field {
+
+  width: 90%;
+
+}
