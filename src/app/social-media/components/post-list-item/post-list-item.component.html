@@ -5,7 +5,7 @@
     </mat-card-title>
 
     <mat-card-subtitle>
-      <span>{{ post.createdDate | date }}</span>
+      <span>{{ post.createdDate | timeAgo }}</span>
     </mat-card-subtitle>
 
   </mat-card-header>
@@ -14,7 +14,7 @@
 
     <img mat-card-image *ngIf="post.imageUrl as imageUrl" [src]="imageUrl" [alt]="post.title">
 
-    <span class="post-content">{{ post.content }}</span>
+    <span class="post-content">{{ post.content | shorten: 100}}</span>
 
   </mat-card-content>
 
